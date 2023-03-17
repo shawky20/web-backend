@@ -14,7 +14,7 @@ public class TeacherController
 {
     @Autowired
     TeacherService teacherService;
-    @PostMapping("/Teacher")
+    @PostMapping("/addTeacher")
     public Teacher addTeacher(@RequestBody Teacher teacher)
     {
         return teacherService.addTeacher(teacher);
