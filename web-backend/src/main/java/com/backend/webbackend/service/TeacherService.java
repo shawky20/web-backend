@@ -12,13 +12,11 @@ public class TeacherService
 {
     @Autowired
     private TeacherRepo teacherRepo;
-
     public Teacher addTeacher(Teacher teacher)
     {
         teacherRepo.save(teacher);
         return teacher;
     }
-
     public List<Teacher> findByMail(Teacher teacher)
     {
         return teacherRepo.findByMail(teacher.getMail());

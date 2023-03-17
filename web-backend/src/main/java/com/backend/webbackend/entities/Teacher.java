@@ -19,6 +19,4 @@ public class Teacher
 
     @Column(name = "mail")
     private String mail;
-
-
 }
