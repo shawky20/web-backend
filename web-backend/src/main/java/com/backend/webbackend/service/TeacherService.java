@@ -17,9 +17,9 @@ public class TeacherService
         teacherRepo.save(teacher);
         return teacher;
     }
-    public List<Teacher> findByMail(String teacherMail)
+    public List<Teacher> findByMail(String mail)
     {
-        return teacherRepo.findByMail(teacherMail);
+        return teacherRepo.findByMail(mail);
     }
 
     public void  deleteTeacher(Long id){
