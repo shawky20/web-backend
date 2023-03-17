@@ -26,5 +26,9 @@ public class TeacherController
         return teacherService.findByMail(teacher);
     }
 
+    @PostMapping("/deleteTeacher")
+    public void deleteTeacherById(@RequestBody Long id){
+        teacherService.deleteTeacher(id);
+    }
 
 }

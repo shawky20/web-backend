@@ -21,4 +21,8 @@ public class TeacherService
     {
         return teacherRepo.findByMail(teacher.getMail());
     }
+
+    public void  deleteTeacher(Long id){
+        teacherRepo.deleteById(id);
+    }
 }
