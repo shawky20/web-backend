@@ -21,9 +21,9 @@ public class TeacherController
         return teacherService.addTeacher(teacher);
     }
     @GetMapping("/findByMail")
-    public List<Teacher> findByMail(@RequestBody String teacher)
+    public List<Teacher> findByMail(@RequestBody String teacherMail)
     {
-        return teacherService.findByMail(teacher);
+        return teacherService.findByMail(teacherMail);
     }
 
     @PostMapping("/deleteTeacher")
