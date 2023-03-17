@@ -6,8 +6,11 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.data.rest.webmvc.RepositoryRestController;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
+
 @RepositoryRestResource
 public interface TeacherRepo extends JpaRepository <Teacher,Long>
 {
-
+    List<Teacher> findByMail(String mail);
 }

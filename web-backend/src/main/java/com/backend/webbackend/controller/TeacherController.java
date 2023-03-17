@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
 
 @RestController
 public class TeacherController
@@ -18,5 +19,10 @@ public class TeacherController
     public Teacher addTeacher(@RequestBody Teacher teacher)
     {
         return teacherService.addTeacher(teacher);
+    }
+    @GetMapping("/findByMail")
+    public List<Teacher> findByMail(@RequestBody Teacher teacher)
+    {
+        return teacherService.findByMail(teacher);
     }
 }
