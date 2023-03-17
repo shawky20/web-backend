@@ -17,6 +17,6 @@ public class Teacher
     @Column(name = "l_name")
     private String lastName;
 
-    @Column(name = "mail")
+    @Column(name = "mail",unique = true)
     private String mail;
 }
