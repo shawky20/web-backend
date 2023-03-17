@@ -1,9 +1,11 @@
 package com.backend.webbackend.entities;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "Teacher")
+@Data
 public class Teacher {
 
     @Id
