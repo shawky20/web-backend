@@ -13,4 +13,6 @@ import java.util.List;
 public interface TeacherRepo extends JpaRepository <Teacher,Long>
 {
     List<Teacher> findByMail(String mail);
+
+
 }
