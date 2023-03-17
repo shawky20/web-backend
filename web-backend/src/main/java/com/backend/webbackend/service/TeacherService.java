@@ -25,4 +25,8 @@ public class TeacherService
     public void  deleteTeacher(Long id){
         teacherRepo.deleteById(id);
     }
+
+    public List<Teacher> findByFirstNameAndLastNameIncludingLetterA(){
+        return teacherRepo.findByFirstNameAndLastNameIncludingLetterA();
+    }
 }

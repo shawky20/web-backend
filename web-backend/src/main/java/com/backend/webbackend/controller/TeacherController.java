@@ -31,4 +31,9 @@ public class TeacherController
         teacherService.deleteTeacher(id);
     }
 
+    @GetMapping("/getAllIncludingA")
+    public List<Teacher> findByFirstNameAndLastNameIncludingLetterA(){
+        return teacherService.findByFirstNameAndLastNameIncludingLetterA();
+    }
+
 }
