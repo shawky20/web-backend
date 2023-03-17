@@ -12,7 +12,9 @@ public class TeacherService
     @Autowired
     private TeacherRepo teacherRepo;
 
-    public TeacherRepo getTeacherRepo() {
-        return teacherRepo;
+    public Teacher addTeacher(Teacher teacher)
+    {
+        teacherRepo.save(teacher);
+        return teacher;
     }
 }
