@@ -6,19 +6,19 @@ import lombok.Data;
 @Entity
 @Table(name = "Teacher")
 @Data
-public class Teacher {
-
+public class Teacher
+{
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    Long id;
+    private Long id;
 
     @Column(name = "f_name")
-    String firstName;
+    private String firstName;
     @Column(name = "l_name")
-    String lastName;
+    private String lastName;
 
     @Column(name = "mail")
-    String mail;
+    private String mail;
 
 
 }
