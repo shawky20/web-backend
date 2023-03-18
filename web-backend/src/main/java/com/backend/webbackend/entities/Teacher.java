@@ -14,6 +14,7 @@ public class Teacher
 
     @Column(name = "f_name")
     private String firstName;
+
     @Column(name = "l_name")
     private String lastName;
 

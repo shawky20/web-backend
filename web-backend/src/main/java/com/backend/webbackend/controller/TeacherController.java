@@ -20,6 +20,7 @@ public class TeacherController
     {
         return teacherService.addTeacher(teacher);
     }
+
     @GetMapping("/findByMail")
     public Teacher findByMail(@RequestBody String mail)
     {
@@ -31,7 +32,7 @@ public class TeacherController
         teacherService.deleteTeacher(id);
     }
 
-    @GetMapping("/getAllIncludingA")
+    @GetMapping("/getAllIncludingLetterA")
     public List<Teacher> findByFirstNameAndLastNameIncludingLetterA(){
         return teacherService.findByFirstNameAndLastNameIncludingLetterA();
     }
